@@ -88,7 +88,7 @@ public class HeadlessChromeAcceptanceTest
   
   @Test
   @Tag("AcceptanceTest")
-  //@Disabled
+  @Disabled
   void testMyAppTitle() {
 	  driver.navigate().to(address);
 	  System.out.println("Title is: "+driver.getTitle());
