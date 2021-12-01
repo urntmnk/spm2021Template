@@ -53,7 +53,7 @@ class MyWebappSeleniumTest {
 		address="http://localhost:8080/spmn2020NewProject";
 		}
 		if(System.getProperty("os.name").contains("Windows")) {
-			System.setProperty("webdriver.chrome.driver", projectPath+"\\drivers\\windows\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\studente\\Documents\\BrowserDriver\\chromedriver.exe");
 			address="http://localhost/spmn2020NewProject";
 		}
 	    
