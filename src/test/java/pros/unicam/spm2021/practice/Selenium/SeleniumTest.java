@@ -60,7 +60,7 @@ class SeleniumTest {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	void checkProsSite() throws InterruptedException {
 		
 		driver.get("http://pros.unicam.it/");
