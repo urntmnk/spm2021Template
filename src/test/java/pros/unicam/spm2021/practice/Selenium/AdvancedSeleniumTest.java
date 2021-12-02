@@ -121,7 +121,7 @@ class AdvancedSeleniumTest {
 	
 	
 	@Test
-	//@Disabled
+	@Disabled
 	  public void testGuestSearchMetadataTypeChoregraphy() throws Exception {
 	    driver.get("https://pros.unicam.it:4200/index?returnUrl=%2Fhome");
 	    //I modified .LinkText to partialLinkText
