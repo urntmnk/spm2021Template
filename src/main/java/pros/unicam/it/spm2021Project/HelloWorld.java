@@ -21,5 +21,6 @@ public class HelloWorld {
 	public String getOS() {
 		return System.getProperty("os.name");
 	}
+	//uran
 	
 }

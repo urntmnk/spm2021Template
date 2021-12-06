@@ -1,0 +1,105 @@
+{
+  "id": "a233189b-daff-41fd-9c90-0e3d5eb31a7e",
+  "version": "2.0",
+  "name": "rp_test_guest_chor",
+  "url": "https://pros.unicam.it:4200",
+  "tests": [{
+    "id": "e99da1c6-4292-4b8e-9c8c-d085b0cba1fd",
+    "name": "rp_guest_chor",
+    "commands": [{
+      "id": "dd9197ce-9e46-4e1a-8ced-8252c5bb2a22",
+      "comment": "",
+      "command": "open",
+      "target": "/index?returnUrl=%2Fhome",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae0e83ee-c108-49e7-8c1e-24ff865c3e01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2560x1345",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76296f3e-5708-4f33-bf55-1774e6f3b299",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link",
+      "targets": [
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarNavDropdown']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'guest')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd7ebf62-eee8-4cc5-b840-9f41fb32a88a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) p",
+      "targets": [
+        ["css=.nav-item:nth-child(3) p", "css:finder"],
+        ["xpath=//li[3]/a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "153def01-b8aa-4965-810c-f8fb276c862c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Search Model']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c882bc88-7c78-481e-aa6c-92a37442e5c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f645b9a6-5352-45cd-baf5-9faf3c0e3866",
+      "comment": "",
+      "command": "type",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["name=type", "name"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Choreography"
+    }, {
+      "id": "1bff1d09-6cc6-46f2-937c-823501deb3ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "95368ed7-3238-4659-af83-57021da195bf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e99da1c6-4292-4b8e-9c8c-d085b0cba1fd"]
+  }],
+  "urls": ["https://pros.unicam.it:4200/"],
+  "plugins": []
+}
